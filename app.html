@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Water-depth Prediction</title>
+    
+		<script src=
+ "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+   </script>
+   <link rel="icon" href="file:///favicon.ico?v=2" />
+   <link rel="shortcut icon" href="https://cdn.shopify.com/s/files/1/0710/0633/files/favicon-perus_2.png?v=1639434194">
+
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body
+ bgcolor="grey"
+ background="1.jpeg"
+ 
+>
+<div class="img"></div>
+<form class="form">
+	<h2>Year</h2>
+    <input class="area"  type="number" id="uiYear" class="floatLabel" name="year" value="2023">
+	<h2>Month</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-Month-2" name="uiMonth" value="2"/>
+		<label for="radio-Month-2">1</label>
+
+		<input type="radio" id="radio-Month-1" name="uiMonth" value="1" />
+		<label for="radio-Month-1">2</label>
+	
+	
+		<input type="radio" id="radio-Month-3" name="uiMonth" value="3"/>
+		<label for="radio-Month-3">3</label>
+		<input type="radio" id="radio-Month-4" name="uiMonth" value="4"/>
+		<label for="radio-Month-4">4</label>
+		<input type="radio" id="radio-Month-5" name="uiMonth" value="5"/>
+		<label for="radio-Month-5">5</label>
+		<input type="radio" id="radio-Month-6" name="uiMonth" value="6" />
+		<label for="radio-Month-6">6</label>
+		<input type="radio" id="radio-Month-7" name="uiMonth" value="7" checked/>
+		<label for="radio-Month-7" >7</label>
+		<input type="radio" id="radio-Month-8" name="uiMonth" value="8"/>
+		<label for="radio-Month-8">8</label>
+		<input type="radio" id="radio-Month-9" name="uiMonth" value="9"/>
+		<label for="radio-Month-9">9</label>
+		<input type="radio" id="radio-Month-10" name="uiMonth" value="10"/>
+		<label for="radio-Month-10">10</label>
+		<input type="radio" id="radio-Month-11" name="uiMonth" value="11"/>
+		<label for="radio-Month-11">11</label>
+		<input type="radio" id="radio-Month-12" name="uiMonth" value="12"/>
+		<label for="radio-Month-12">12</label>
+	</div>
+	<h2>Water usuage</h2>
+    <input class="irri"  type="text" id="uiirri" class="floatLabel"  value="1000">
+	<h2>Rainfall(mm)</h2>
+    <input class="rain"  type="text" id="uirain" class="floatLabel"  value="100">
+	<h2>Avg. Temperature(&#8451)</h2>
+    <input class="temp"  type="text" id="uitemp" class="floatLabel"  value="25">
+	</form>
+<form class="form">
+	
+	<button class="submit" onclick="onClickedEstimatedepth()" type="button">Estimate </button>
+	<div id="uiEstimateddepth" class="result">	</div>
+</body>
+</html>
